@@ -1,0 +1,31 @@
+<div class="tabs-wrapper container">
+	<div class="tab-header">
+		<h1>Lorem ipsum dolor. Ismet</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+		<p></p>
+	</div>
+	<div class="tabs">
+		<ul id="tabs-nav" class="row">
+			<li class="col-md-4 col-sm-12">
+				<a href="#tab1">Featured Conferences</a>
+			</li>
+			<li class="col-md-4 col-sm-12">
+				<a href="#tab2">Recommended Conferences</a>
+			</li>
+			<li class="col-md-4 col-sm-12">
+				<a href="#tab3">Past Conferences</a>
+			</li>
+		</ul>
+		<div id="tabs-content">
+			<div id="tab1" class="tab-content">
+				{{ drupal_view('conferrence', 'block_1') }}
+			</div>
+			<div id="tab2" class="tab-content">
+				{{ drupal_view('conferrence', 'block_3') }}
+			</div>
+			<div id="tab3" class="tab-content">
+				{{ drupal_view('conferrence', 'block_2') }}
+			</div>
+		</div>
+	</div>
+</div>

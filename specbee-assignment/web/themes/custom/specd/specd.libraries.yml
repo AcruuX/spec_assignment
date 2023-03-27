@@ -1,0 +1,37 @@
+global:
+  version: VERSION
+  css:
+    theme:
+      css/global.css: {}
+      //maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css: {type: external}
+  
+  js:
+    js/tab-slider.js: {}
+    //maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js: {type: external}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
+
+  fonts:
+    //fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap: {type: external}
+
+fontawesome:
+  version: 4.7.0
+  remote: //use.fontawesome.com/
+  js:
+    //use.fontawesome.com/f479fb1064.js: {}
+  license:
+    name: MIT
+    url: //opensource.org/licenses/mit-license.html
+    gpl-compatible: true
+
+slider:
+  css:
+    theme:
+      //cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css:
+        { type: external }
+  js:
+    //cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js:
+      { type: external, minified: true }

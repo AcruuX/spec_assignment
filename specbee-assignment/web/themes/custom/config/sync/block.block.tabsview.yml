@@ -1,0 +1,25 @@
+uuid: 4780d19e-5d21-4685-85b1-30ddb84773c8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:47244e36-2234-4870-940e-21ebcf12d70a'
+  module:
+    - block_content
+  theme:
+    - specd
+id: tabsview
+theme: specd
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:47244e36-2234-4870-940e-21ebcf12d70a'
+settings:
+  id: 'block_content:47244e36-2234-4870-940e-21ebcf12d70a'
+  label: 'Tabs view'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 31653c54-0c78-487f-bd33-c605c2a6cc23
+langcode: en
+status: false
+dependencies:
+  theme:
+    - specd
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: specd_page_title
+theme: specd
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

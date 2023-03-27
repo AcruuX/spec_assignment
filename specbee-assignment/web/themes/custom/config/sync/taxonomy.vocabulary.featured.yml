@@ -1,0 +1,8 @@
+uuid: 92a5d66f-e65b-482c-8521-396aedb2b12d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Conferences type'
+vid: featured
+description: ''
+weight: 0

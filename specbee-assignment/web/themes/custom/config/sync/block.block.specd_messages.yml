@@ -1,0 +1,22 @@
+uuid: 185ac335-7947-472c-8a23-f7f4de70a4b1
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - specd
+_core:
+  default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
+id: specd_messages
+theme: specd
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

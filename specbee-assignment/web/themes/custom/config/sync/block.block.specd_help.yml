@@ -1,0 +1,22 @@
+uuid: 67034ad7-d704-4cbd-8621-28521b34df07
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - specd
+_core:
+  default_config_hash: '-laWx8WA-ikiIEH3NJQ0hVbjqk3iEuBms91LB0B4IQU'
+id: specd_help
+theme: specd
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

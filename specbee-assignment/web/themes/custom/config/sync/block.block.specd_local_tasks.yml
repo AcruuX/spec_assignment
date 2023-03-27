@@ -1,0 +1,22 @@
+uuid: 2d8a6acd-4840-438d-ab9f-56c2b9123ac1
+langcode: en
+status: false
+dependencies:
+  theme:
+    - specd
+_core:
+  default_config_hash: Qf2BoIzd9py5AYXZj8fJzCYDyVk1-AWXcu-AqQeDZKA
+id: specd_local_tasks
+theme: specd
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

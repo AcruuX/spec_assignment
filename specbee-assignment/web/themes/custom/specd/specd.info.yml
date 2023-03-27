@@ -1,0 +1,20 @@
+name: Specd Assignment
+description: "Assignment custom theme"
+core: 8.x
+type: theme
+core_version_requirement: ^8 || ^9
+base theme: false
+regions:
+  header: Header
+  help: Help
+  content: Content
+  sidebar_first: 'Left Sidebar'
+  sidebar_second: 'Right Sidebar'
+  footer_first: 'Footer first column'
+  footer_middle: 'Footer middle column'
+  footer_last: 'Footer last column'
+
+libraries:
+ - specd/global
+ - specd/fontawesome
+ - specd/slider

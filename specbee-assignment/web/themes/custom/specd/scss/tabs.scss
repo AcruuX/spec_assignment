@@ -1,0 +1,226 @@
+.tabs-wrapper {
+  .tab-header {
+    text-align: center;
+    h1 {
+      font-size: 35.9px;
+      color: #424a55;
+      margin-bottom: 9.74px;
+      font-weight: 300;
+    }
+    p {
+      font-size: 18px;
+      color: #7c8993;
+      font-weight: 200;
+    }
+    margin-bottom: 86.57px;
+  }
+  .tabs {
+    #tabs-nav {
+      justify-content: space-around;
+      border-bottom: 3px solid #017fd5;
+      li {
+        padding: 19.34px 0;
+        text-align: center;
+        list-style: none;
+        &:hover {
+          background-color: #cfd3d6;
+        }
+        a {
+          color: #017fd5;
+          font-size: 18px;
+          text-decoration: none;
+        }
+        &.active {
+          position: relative;
+          a {
+            color: #424a55;
+            font-size: 24px;
+          }
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 50%;
+            bottom: -15px;
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 15px solid #017fd5;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tab-slider-wrapper {
+  display: flex;
+  margin-top: 38px;
+  .slick-arrow {
+    background-color: transparent;
+    font-size: 0;
+    border: none;
+    position: absolute;
+    top: 50%;
+    @media only screen and (min-width: 769px){
+      display: block;
+    }
+    &::before {
+      content: "";
+      font-size: 50px;
+      display: inline-block;
+      color: #9ba5ac;
+      font-weight: bold;
+      font-family: "FontAwesome";
+    }
+  }
+  .slick-next {
+    right: -50px;
+    &::before {
+      content: "\f105";
+    }
+  }
+  .slick-prev {
+    left: -50px;
+    &::before {
+      content: "\f104";
+    }
+  }
+  .slick-dots {
+    display: none !important;
+  }
+  .views-row {
+    @media only screen and (min-width: 769px){
+      padding: 0 15px;
+    }
+  }
+}
+
+.tabs-wrapper{
+    &.container{
+        padding: 0;
+    }
+}
+
+.con-card-wrapper {
+  border: 1px solid #ececec;
+  border-radius: 4px;
+  transition: all ease-in 0.3s;
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 20px #00000033;
+    .con-card-footer {
+      display: block;
+    }
+  }
+  .con-card-image-wrapper {
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .star-mark,
+    .price {
+      position: absolute;
+    }
+    .star-mark {
+      width: 50px;
+      height: 50px;
+      background-color: #12d16f;
+      top: 0;
+      left: 0;
+      clip-path: polygon(0 0, 0% 100%, 100% 0);
+      padding: 5px 0 0 8px;
+      color: #ffffff;
+    }
+    .price {
+      top: 11px;
+      right: 11px;
+      color: #ffffff;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 100;
+      padding: 3px 10px;
+      border: 1px solid #ffffff;
+      opacity: 0.3;
+      border-radius: 4px;
+    }
+  }
+  .con-card-content {
+    padding: 15px 0 18px 31px;
+    .title {
+      font-size: 18px;
+      margin-bottom: 12px;
+      a {
+        color: #424a55;
+        text-decoration: none;
+      }
+    }
+    .tag,
+    .date,
+    .location {
+      color: #7c8993;
+      font-size: 14px;
+      margin-bottom: 13px;
+      i {
+        margin-right: 8px;
+      }
+    }
+    .tag {
+      i {
+        transform: rotate(90deg);
+      }
+    }
+    .location {
+      i {
+        color: #ff5530;
+      }
+    }
+  }
+  .con-card-footer {
+    display: none;
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border-top: 1px solid #ececec;
+      li {
+        display: inline-block;
+        padding: 13px 25px;
+        font-size: 23px;
+        border-right: 1px solid #ececec;
+        color: #ced0d4;
+        i.liked {
+          color: #ff5530;
+          &:hover {
+            color: inherit;
+          }
+        }
+        &:hover {
+          i {
+            color: #0b80cf;
+          }
+          cursor: pointer;
+        }
+        &:last-child {
+          font-size: 14px;
+          text-align: center;
+          border-right: 0;
+          a {
+            text-decoration: none;
+            color: #0b80cf;
+          }
+          &:hover {
+            a {
+              color: #017fd5;
+            }
+          }
+        }
+      }
+    }
+  }
+}

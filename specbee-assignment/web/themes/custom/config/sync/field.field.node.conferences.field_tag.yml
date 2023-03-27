@@ -1,0 +1,19 @@
+uuid: 61beeed2-c202-4a0c-9911-5442cb6f074f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tag
+    - node.type.conferences
+id: node.conferences.field_tag
+field_name: field_tag
+entity_type: node
+bundle: conferences
+label: Tag
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

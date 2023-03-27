@@ -1,0 +1,22 @@
+uuid: 90d980be-87c6-4708-99fd-f944ef47bd54
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - specd
+_core:
+  default_config_hash: I6Esh8cDlPdl2POZg4MOSRUrQNYA1UNCJCxL2yqT_wc
+id: specd_powered
+theme: specd
+region: header
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

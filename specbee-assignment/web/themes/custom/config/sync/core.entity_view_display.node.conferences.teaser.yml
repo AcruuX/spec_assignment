@@ -1,0 +1,44 @@
+uuid: acc41458-ccc9-4bbe-9b87-2149aecb4854
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.conferences.body
+    - field.field.node.conferences.field_address
+    - field.field.node.conferences.field_con_image
+    - field.field.node.conferences.field_con_type
+    - field.field.node.conferences.field_date
+    - field.field.node.conferences.field_like
+    - field.field.node.conferences.field_price
+    - field.field.node.conferences.field_tag
+    - node.type.conferences
+  module:
+    - text
+    - user
+id: node.conferences.teaser
+targetEntityType: node
+bundle: conferences
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_address: true
+  field_con_image: true
+  field_con_type: true
+  field_date: true
+  field_like: true
+  field_price: true
+  field_tag: true
